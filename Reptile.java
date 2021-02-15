@@ -2,12 +2,16 @@ public class Reptile extends Animal {
 
     // properties
     double speed;
+	string favoriteFood; 
 
     // constructor
-    Fish(double speed) {
+    public Reptile(double speed, string favoriteFood) {
       this.speed = speed;
+	  this.favoriteFood = favoriteFood; 
     }
 
     // behavior 
-    string favoriteFood() {}
+    public string favoriteFood(string favoriteFood ) {
+		return favoriteFood; 
+	}
 }

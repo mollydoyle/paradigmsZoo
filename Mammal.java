@@ -3,13 +3,17 @@ public class Mammal extends Animal {
 
     // properties
     boolean isAquatic;
+	boolean canSpeak; 
 
     // constructor
-    Mammal(boolean isAquatic) {
+    public Mammal(boolean isAquatic, boolean canSpeak) {
         this.isAquatic = isAquatic;
+		this.canSpeak = canSpeak; 
     }
 
     // behavior 
-    void speak() {}
+    public void speak(boolean canSpeak) {
+		return canSpeak; 
+	}
 
 }

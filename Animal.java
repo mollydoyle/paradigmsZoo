@@ -4,15 +4,26 @@ public class Animal {
     // properties
     String name;
     int age;
+	boolean doesItExist; 
+	boolean doesItMove; 
 
     // constructor
-    Animal(String name, int age) {
+    public Animal(String name, int age, boolean doesItExist, boolean doesItMove) {
       this.name = name;
       this.age = age;
+	  this.doesItExist = doesItExist; 
 
     }
 
       // behavior 
-      final boolean exist() {}
-      abstract boolean move() {}
+      public boolean exist() {
+	  	return doesItExist; 
+	  }
+
+
+      public boolean move() {
+	  	return doesItMove; 
+	  }
+
+	  public abstract void display(); 
 }
