@@ -19,4 +19,5 @@ public class ZooTest{
 
 
 	public static void printDescriptions(ArrayList<Animal> zoo){
-		System.out.println(
+		System.out.println(); 
+	}
