@@ -1,28 +1,18 @@
 //Bird class inherits from Animal
-public class Bird extends Animal {
+public abstract class Bird extends Animal {
     // properties
     double wingSpan;
     boolean isEndangered;
-	boolean canPerch; 
 
     // constructor
-    public Bird(double wingSpan, boolean isEndangered, boolean canPerch) {
+    public Bird(String name, int age, double wingSpan, boolean isEndangered) {
+        super(name, age);
         this.wingSpan = wingSpan;
         this.isEndangered = isEndangered; 
-		this.canPerch = canPerch; 
     }
 
     // behavior 
-    public void canPerch(boolean canPerch) {
-		this.canPerch = canPerch; 
+    public void perch() {
+		System.out.print("He can perch on a branch. ");
 	}
-
-	public void isEndangered(boolean isEndangered){
-		this.isEndangered = isEndangered; 
-	}
-
-	public void wingSpan(double wingSpan){
-		this.wingSpan = wingSpan; 
-	}
-
 }

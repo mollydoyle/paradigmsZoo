@@ -7,40 +7,56 @@ public class Crocodile extends Reptile {
 
 
     // constructor
-    Crocodile (double speed, string favoriteFood, double tailLength, String nameOfSwamp, boolean isDangerous) {
-		super(speed, favoriteFood, tailLength, nameOfSwamp, isDangerous); 
+    Crocodile (String name, int age, double speed, double tailLength, String nameOfSwamp, boolean isDangerous) {
+			super(name, age, speed); 
     	this.tailLength = tailLength; 
-		this.nameOfSwamp = nameOfSwamp; 
-		this.isDangerous = isDangerous;
+			this.nameOfSwamp = nameOfSwamp; 
+			this.isDangerous = isDangerous;
     }
 
+	public void move(){
+		System.out.print("He slides on his belly to move. ");
+	}
 
 	public void isDangerous(boolean isDangerous){
 		if(isDangerous){
-			System.out.println("He is dangerous."); 
+			System.out.print("He is dangerous. "); 
 		}
 		else{
-			System.out.println("He is not dangerous."); 
+			System.out.print("He is not dangerous. "); 
 		}
 	}
 
+	public void favoriteFood(){
+		System.out.print("His favorite food is fish. ");
+	}
+
+	public void deathRoll(){
+		System.out.print("He uses the death roll to dismember prey. ");
+	}
+
+	// these behaviors are included for dispaly purposes and will not be included as behaviors in the flow chart
 	public void tailLength(double tailLength){
-		System.out.println("His tail is " + tailLength + " feet long."); 
+		System.out.print("His tail is " + tailLength + " feet long. "); 
 	}
 
 	public void nameOfSwamp(String nameOfSwamp){
-		System.out.println("He lives in " + nameOfSwamp + " swamp."); 
+		System.out.print("He lives in " + nameOfSwamp + " swamp. "); 
 	} 
 
+
     public void display() {
-		System.out.println(this.name + " is a Crocodile."); 
-		System.out.println("He is " + this.age + " years old."); 
-		System.out.println("He moves at a rate of " + this.speed + " miles per hour."); 
-		System.out.println("His favorite food is " + this.favoriteFood + "."); 
+		System.out.print(this.name + " is a Crocodile. "); 
+		System.out.print("He is " + this.age + " years old. ");
+		exist();
+		move();
+		System.out.print("He moves at a rate of " + this.speed + " miles per hour. ");
+		favoriteFood(); 
 		isDangerous(isDangerous); 
 		tailLength(tailLength); 
 		nameOfSwamp(nameOfSwamp); 
-	
+		deathRoll();
+		System.out.println("\n");
 	}
 
 }

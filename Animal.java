@@ -1,29 +1,21 @@
 // Animal class 
-public class Animal {
+public abstract class Animal {
 
     // properties
     String name;
     int age;
-	boolean doesItExist; 
-	boolean doesItMove; 
 
     // constructor
-    public Animal(String name, int age, boolean doesItExist, boolean doesItMove) {
+    public Animal(String name, int age) {
       this.name = name;
       this.age = age;
-	  this.doesItExist = doesItExist; 
-
     }
 
-      // behavior 
-      public boolean exist() {
-	  	return doesItExist; 
+    // behavior 
+    public final void exist() {
+	  	System.out.print("He exists in the zoo. "); 
 	  }
 
-
-      public boolean move() {
-	  	return doesItMove; 
-	  }
-
-	  public abstract void display(); 
+    public abstract void move();
+    public abstract void display();
 }
