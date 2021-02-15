@@ -10,6 +10,6 @@ public class Eagle extends Bird {
     }
 
     // behaviors
-    void catchPreyInTalons() {}
+    public void catchPreyInTalons() {}
 
 }

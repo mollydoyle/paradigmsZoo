@@ -15,6 +15,6 @@ public class Tortoise extends Reptile {
       }
 
       // behavior 
-      void hideInShell() {}
+      public void hideInShell() {}
 
 }

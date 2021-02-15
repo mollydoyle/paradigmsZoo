@@ -1,16 +1,17 @@
 public class Flamingo extends Bird {
 
     // properties 
-    double legLength;
+    double legLength = 8;
+	boolean standOnOneLeg = true; 
 
     // constructor 
     Flamingo(double legLength) {
       this.legLength = legLength;
     }
 
-
-
     // behavior 
-    void standOnOneLeg() {}
+    public boolean standOnOneLeg(boolean standOnOneLeg) {
+		return standOnOneLeg; 
+	}
 
 }

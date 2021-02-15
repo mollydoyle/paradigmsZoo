@@ -11,6 +11,6 @@ public class Dog extends Mammal {
       this.breed = breed;
     }
 
-    void pant(){}
+    public void pant(){}
 
 }

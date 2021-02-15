@@ -5,9 +5,9 @@ public class Crocodile extends Reptile {
 
     // constructor
 
-    Leopard(boolean isDangerous) {
+    Crocodile (boolean isDangerous) {
 
-    this.isDangerous = isDangerous;
+    	this.isDangerous = isDangerous;
 
     }
 
@@ -15,6 +15,6 @@ public class Crocodile extends Reptile {
 
     // behavior 
 
-    void deathRoll() {}
+    public void deathRoll() {}
 
 }

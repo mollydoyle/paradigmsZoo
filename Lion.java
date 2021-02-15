@@ -12,6 +12,6 @@ public class Lion extends Mammal {
 
 
     // behavior 
-    void hunt() {}
+    public void hunt() {}
 
 }
