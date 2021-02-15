@@ -3,12 +3,12 @@ public class Flamingo extends Bird {
     // properties 
     double legLength;
 	String color;  
-	boolean standOnOneLeg = true; 
+	boolean standOnOneLeg; 
 
     // constructor 
 
-    Flamingo(double wingSpan, boolean isEndangered, boolean canPerch, double legLength, string color) {
-	  super(wingSpan, isEndangered, canPerch, legLength, color); 
+    Flamingo(double wingSpan, boolean isEndangered, boolean canPerch, double legLength, String color, boolean standOnOneLeg) {
+	  super(wingSpan, isEndangered, canPerch, legLength, color, standOnOneLeg); 
       this.legLength = legLength;
 	  this.color = color; 
 	  this.standOnOneLeg = standOnOneLeg; 
@@ -17,7 +17,7 @@ public class Flamingo extends Bird {
     // behavior 
     public void standOnOneLeg(boolean standOnOneLeg) {
 		if(standOnOneLeg){
-			System.out.print("He stands on one leg."); 
+			System.out.println("He stands on one leg."); 
 		}
 		else{
 			System.out.println("He does not stand on one leg."); 
@@ -34,9 +34,26 @@ public class Flamingo extends Bird {
 	}
 
 	public void display() {
-		System.out.println(this.name + "is a Flamingo");
-	   	standOnOneLeg(standOnOneLeg); 
+		System.out.println(this.name + " is a Flamingo");
+		System.out.println("He is " + this.age + " years old."); 
+	   	System.out.println("His wingspan is " + this.wingspan + " inches long."); 
+		
+		if(this.isEndangered){
+			System.out.println("He is endangered."); 
+		} else{
+			System.out.println("He is not endangered."); 
+		}
+
+		if(this.canPerch){
+			System.out.println("He can perch."); 
+		} else{
+			System.out.println("He cannot perch."); 
+		}
+
+
+		standOnOneLeg(standOnOneLeg); 
 		legLength(legLength); 	
+		color(color); 
 
 	}
 

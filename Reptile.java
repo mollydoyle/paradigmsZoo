@@ -11,7 +11,11 @@ public class Reptile extends Animal {
     }
 
     // behavior 
-    public string favoriteFood(string favoriteFood ) {
-		return favoriteFood; 
+    public void favoriteFood(string favoriteFood ) {
+		this.favoriteFood = favoriteFood; 
+	}
+
+	public void speed(double speed){
+		this.speed = speed; 
 	}
 }

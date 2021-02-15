@@ -13,8 +13,16 @@ public class Bird extends Animal {
     }
 
     // behavior 
-    public boolean perch(boolean canPerch) {
-		return canPerch; 
+    public void canPerch(boolean canPerch) {
+		this.canPerch = canPerch; 
+	}
+
+	public void isEndangered(boolean isEndangered){
+		this.isEndangered = isEndangered; 
+	}
+
+	public void wingSpan(double wingSpan){
+		this.wingSpan = wingSpan; 
 	}
 
 }
