@@ -10,6 +10,10 @@ public class Eagle extends Bird {
         this.beakSize = beakSize;
     }
 
+    Eagle(String name, boolean isEndangered) {
+        super(name, isEndangered);
+    }
+
     // behaviors
     public void move() {
         System.out.print("He flys through the sky. ");

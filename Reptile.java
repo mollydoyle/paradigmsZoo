@@ -4,9 +4,13 @@ public abstract class Reptile extends Animal {
     double speed;
 
     // constructor
-    public Reptile(String name, int age, double speed) {
+    protected Reptile(String name, int age, double speed) {
       super(name, age);
       this.speed = speed;
+    }
+
+    protected Reptile(String name) {
+      super(name);
     }
 
     // behavior 

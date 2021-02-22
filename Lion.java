@@ -9,6 +9,15 @@ public class Lion extends Mammal {
         this.clawLength = clawLength;
     }
 
+    Lion(String name, double clawLength) {
+        super(name);
+        this.clawLength = clawLength;
+    }
+
+    public void specialProperty() {
+        System.out.print("Has claws that are " + this.clawLength + "inches long. "); 
+      }
+
     // behavior 
     public void move() {
         System.out.print("He stalks and lunges when he moves. ");

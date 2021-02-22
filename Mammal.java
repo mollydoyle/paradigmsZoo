@@ -5,9 +5,13 @@ public abstract class Mammal extends Animal {
     boolean isAquatic;
 
     // constructor
-    public Mammal(String name, int age, boolean isAquatic) {
+    protected Mammal(String name, int age, boolean isAquatic) {
         super(name, age);
         this.isAquatic = isAquatic;
+    }
+
+    protected Mammal(String name) {
+        super(name);
     }
 
     // behavior 
