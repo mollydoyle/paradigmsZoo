@@ -10,7 +10,7 @@ public class ZooTest{
 		} 
 	}
 
-	public static void main(String args[]) {
+	public void setupAnimals() {
 		Animal num1 = new Dog("Johnathan", 2, false, "Siberian Husky");
 		Animal num2 = new Dog("Stewart", 12, false, "German Shepard");
 		Animal num3 = new Lion("Josh", 4, false, 3.5);
@@ -38,6 +38,36 @@ public class ZooTest{
 		zoo.add(num11); 
 		zoo.add(num12); 
 
-		printDescriptions(zoo);
+		printSummaryView();
+		printVerboseList();
+	}
+
+	void printSummaryView() {
+
+	}
+
+	public static void printVerboseList() {
+
+	}
+
+	int addAnimal(Animal a){
+
+	}
+
+  int deleteAnimal(int index){
+
+	}
+
+  void displayAnimals(String name) {
+
+	}
+
+	static String printInteractiveOptions(){
+
+	}
+
+	public static void main(String args[]) {
+		setupAnimals();
+		printInteractiveOptions();
 	}
 }
