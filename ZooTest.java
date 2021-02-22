@@ -142,10 +142,10 @@ public class ZooTest{
 		for(int i = 0; i<zoo.size();i++) {
 			if(zoo.get(i).getAnimalName().equals(name)) {
 				zoo.remove(i);
+				printSummaryView();
 				return;
 			}
 		}
-		printSummaryView();
 	}
 
   static void displayAnimal(String name) {
@@ -154,10 +154,10 @@ public class ZooTest{
 				System.out.print(zoo.get(i).getAnimalName() + " the " + zoo.get(i).getClass().getName() + " ");
 				zoo.get(i).specialProperty();
 				System.out.println();
+				printSummaryView();
 				return;
 			}
 		}
-		printSummaryView();
 	}
 
 	static void printInteractiveOptions(){
