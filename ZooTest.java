@@ -10,7 +10,7 @@ public class ZooTest{
 		} 
 	}
 
-	public void setupAnimals() {
+	public static void setupAnimals() {
 		Animal num1 = new Dog("Johnathan", 2, false, "Siberian Husky");
 		Animal num2 = new Dog("Stewart", 12, false, "German Shepard");
 		Animal num3 = new Lion("Josh", 4, false, 3.5);
@@ -42,7 +42,7 @@ public class ZooTest{
 		printVerboseList();
 	}
 
-	void printSummaryView() {
+	public static void printSummaryView() {
 
 	}
 
@@ -50,20 +50,48 @@ public class ZooTest{
 
 	}
 
-	int addAnimal(Animal a){
+	static int addAnimal(String animalInformation){
 
 	}
 
-  int deleteAnimal(int index){
+  static int deleteAnimal(String name){
 
 	}
 
-  void displayAnimals(String name) {
+  static void displayAnimal(String name) {
 
 	}
 
-	static String printInteractiveOptions(){
+	static void printInteractiveOptions(){
+		Scanner in =  new Scanner(System.in);
+		String response = "";
 
+		while(!response.equals("exit")) {
+			System.out.println("Type exit at any time to end the program.");
+			System.out.println("Options: ");
+			System.out.println("Add an animal with: add");
+			System.out.println("Delete an animal with: delete");
+			System.out.println("Display an animal with: display");
+			response = in.nextLine();
+			if(response.equals("add")) {
+				System.out.println("What animal would you like to add to the zoo?");
+				response = in.nextLine();
+				addAnimal(response);
+			}
+			else if(response.equals("delete")) {
+				System.out.println("What animal would you like to remove from the zoo?");
+				response = in.nextLine();
+				deleteAnimal(response);
+			}
+			else if(response.equals("display")) {
+				System.out.println("What animal would you like to display information about?");
+				response = in.nextLine();
+				displayAnimal(response);
+			}
+			else {
+				System.out.println("Response did not match any of the options... please enter agiain");
+			}
+		}
 	}
 
 	public static void main(String args[]) {
