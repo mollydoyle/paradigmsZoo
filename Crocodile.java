@@ -12,7 +12,16 @@ public class Crocodile extends Reptile {
     	this.tailLength = tailLength; 
 			this.nameOfSwamp = nameOfSwamp; 
 			this.isDangerous = isDangerous;
-    }
+		}
+		
+		Crocodile (String name, double tailLength) {
+			super(name);
+			this.tailLength = tailLength;
+		}
+
+		public void specialProperty() {
+			System.out.print("has a tail that is " + tailLength + " feet long. "); 
+		}
 
 	public void move(){
 		System.out.print("He slides on his belly to move. ");

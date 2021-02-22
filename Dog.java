@@ -10,6 +10,15 @@ public class Dog extends Mammal {
     this.breed = breed;
   }
 
+  Dog(String name, String breed) {
+    super(name);
+    this.breed = breed;
+  }
+
+  public void specialProperty() {
+    System.out.print("is a " + this.breed + " breed of dog. ");
+  }
+  
   //behavior
   public void pant(){
     System.out.print("He pants when tired. ");

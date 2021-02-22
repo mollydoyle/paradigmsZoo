@@ -11,7 +11,11 @@ public class Flamingo extends Bird {
 	 		super(name, age, wingSpan, isEndangered); 
       this.legLength = legLength;
 	  	this.color = color; 
-    }
+		}
+		
+		Flamingo(String name, boolean isEndangered) {
+			super(name, isEndangered);
+		}
 
     // behavior 
     public void standOnOneLeg() {

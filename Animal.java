@@ -6,9 +6,13 @@ public abstract class Animal {
     int age;
 
     // constructor
-    public Animal(String name, int age) {
+    protected Animal(String name, int age) {
       this.name = name;
       this.age = age;
+    }
+
+    protected Animal(String name) {
+      this.name = name;
     }
 
     // behavior 
@@ -16,6 +20,11 @@ public abstract class Animal {
 	  	System.out.print("He exists in the zoo. "); 
 	  }
 
+    public String getAnimalName() {
+      return name;
+    }
+
+    public abstract void specialProperty();
     public abstract void move();
     public abstract void display();
 }

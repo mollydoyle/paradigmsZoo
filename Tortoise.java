@@ -7,7 +7,16 @@ public class Tortoise extends Reptile {
     Tortoise(String name, int age, double speed, double shellDiameter) {
 		  super(name, age, speed); 
       this.shellDiameter = shellDiameter;
-    }
+		}
+		
+		Tortoise(String name, double shellDiameter) {
+			super(name);
+			this.shellDiameter = shellDiameter;
+		}
+
+		public void specialProperty() {
+			System.out.print("has a shell that is " + shellDiameter + " inches wide. ");
+		}
 
     // behavior 
 		public void move(){
@@ -22,7 +31,7 @@ public class Tortoise extends Reptile {
 			System.out.print("He can hide in his shell. "); 
 	  }
 
-	  public void shellDiameter(double shellDiameter){
+	  public void shellDiameter(){
 		  System.out.print("His shell is " + shellDiameter + " inches wide. "); 
 		 }
 
@@ -33,7 +42,7 @@ public class Tortoise extends Reptile {
 			move();
 		  System.out.print("He moves at a rate of " + this.speed + " miles per hours. "); 
 		  favoriteFood();
-		  shellDiameter(shellDiameter);
+		  shellDiameter();
 			hideInShell();
 			System.out.println("\n");
 	  }
