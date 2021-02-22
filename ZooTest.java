@@ -146,6 +146,7 @@ public class ZooTest{
 				return;
 			}
 		}
+		System.out.println("Animal not found");
 	}
 
   static void displayAnimal(String name) {
@@ -158,6 +159,7 @@ public class ZooTest{
 				return;
 			}
 		}
+		System.out.println("Animal not found");
 	}
 
 	static void printInteractiveOptions(){
